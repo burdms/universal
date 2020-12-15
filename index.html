@@ -6,7 +6,75 @@
     <title>Universal — онлайн издание</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a href="/universal" class="header-logo__container">
+            <img src="img/logo-long-dark.svg" alt="Logo" class="header__logo" />
+          </a>
+          <!-- /.header-logo__container -->
+
+          <ul class="header-navbar">
+            <li class="header-li"><a href="#" class="header-navbar__item">Статьи</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">Новости</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">Курсы</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">HTML</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">CSS</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">JavaScript</a></li>
+            <li class="header-li"><a href="#" class="header-navbar__item">Web Design</a></li>
+          </ul>
+          <!-- /.header-list -->
+          <form action="#" class="header-search">
+            <input type="text" class="header-search__input" placeholder="Поиск" />
+            <button class="header-search__button">
+              <svg class="search-icon">
+                <use xlink:href="img/sprite.svg#Search"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- /.header-search -->
+
+          <button class="burger-button">
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header-co#5c7d99 -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <div class="menu">
+      <div class="menu-container">
+        <form action="#" class="menu-search menu-search_toggle">
+          <input type="text" class="menu-search__input" placeholder="Поиск" />
+          <button class="menu-search__button">
+            <svg class="search-icon">
+              <use xlink:href="img/sprite.svg#Search"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- /.menu-search -->
+        <ul class="menu-navbar">
+          <li class="menu-li"><a href="#" class="menu-navbar__item">Статьи</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">Новости</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">Курсы</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">HTML</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">CSS</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">JavaScript</a></li>
+          <li class="menu-li"><a href="#" class="menu-navbar__item">Web Design</a></li>
+        </ul>
+      </div>
+      <!-- /.menu-container -->
+    </div>
+    <!-- /.menu -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

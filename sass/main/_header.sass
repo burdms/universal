@@ -1,0 +1,180 @@
+.header
+  background-color: $background-dark
+  &_light
+    background-color: #fff
+  &-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px 0
+  &-logo
+    &__container
+      width: 163px
+  &-navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    padding: 0
+    list-style-type: none
+    color: #ffffff
+    &_light
+      background-color: $text-color-light
+    &__item
+      font-style: normal
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+      color: inherit
+      text-decoration: none
+  &-li
+    &:not(:last-child)
+      margin-right: 30px
+  &-search
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    width: 263px
+    height: 39px
+    &__input
+      width: 100%
+      height: 100%
+      padding-left: 25px
+      padding-right: 65px
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      background-color: #656B70
+      border: none
+      &_light
+        background-color: #F5F5F5
+      &::placeholder
+        font-family: "Lato-Regular", sans-serif
+        font-size: 14px
+        line-height: 20px
+        color: $text-color-light
+    &__button
+      position: absolute
+      top: 9px
+      right: 25px
+      background-color: transparent
+.search
+  &-icon
+    width: 17.4px
+    height: 18px
+    fill: #BCBFC2
+
+.burger
+  &-button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    width: 20px
+    height: 11px
+    padding: 0
+    background-color: transparent
+    &__line
+      width: 20px
+      height: 1px
+      background-color: #fff
+
+.menu
+  display: none
+  position: fixed
+  top: 65px
+  left: 0
+  width: 100%
+  height: 100%
+  overflow-y: auto
+  z-index: 9999
+  &_visible
+    display: block
+  &-container
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 350px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px 0
+    background-color: $background-dark
+    &_light
+      background-color: #fff
+  &-search
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    width: 263px
+    height: 39px
+    margin-bottom: 10px
+    &__input
+      width: 100%
+      height: 100%
+      padding-left: 25px
+      padding-right: 65px
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      background-color: #656B70
+      border: none
+      &_light
+        background-color: #F5F5F5
+      &::placeholder
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: $text-color-light
+    &__button
+      position: absolute
+      top: 9px
+      right: 25px
+      background-color: transparent
+    &_toggle
+      display: none
+  &-navbar
+    margin: 0
+    padding: 0
+    list-style-type: none
+    text-align: center
+    color: #ffffff
+    &_light
+      background-color: $text-color-light
+    &__item
+      font-style: normal
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+      color: inherit
+      text-decoration: none
+  &-li
+    &:not(:last-child)
+      margin-bottom: 10px
+
+@media (min-width: 1201px)
+  .burger
+    &-button
+      display: none
+
+@media (max-width: 1200px)
+  .header
+    &-navbar
+      display: none
+  .burger
+    &-button
+      margin-left: 143px
+
+@media (max-width: 992px)
+  .header
+    &-search
+      display: none
+  .burger
+    &-button
+      margin-left: 0
+  .menu
+    &-search
+      &_toggle
+        display: block

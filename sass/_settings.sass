@@ -1,10 +1,15 @@
 *
   box-sizing: border-box
-
 body
   font-family: 'Lato-Regular', sans-serif
-  // background-color: #000
-  // color: $text-color
+  font-weight: 400
+  font-style: normal
+  background-color: $background-body
+  color: $text-color
+.overflow
+  &_hidden
+    overflow: visible
+    height: 100%
 img
   max-width: 100%
 button
@@ -20,3 +25,14 @@ input, textarea
 .container
   max-width: 1140px
   margin: auto
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 90%
