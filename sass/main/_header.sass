@@ -163,6 +163,17 @@
   .burger
     &-button
       display: none
+@media (min-width: 991px)
+  .header
+    &-navbar
+      &__item
+        &:hover
+          transition-duration: 0.3s
+          color: $blue
+  .search
+    &-icon
+      &:hover
+        fill: #fff
 
 @media (max-width: 1200px)
   .header
