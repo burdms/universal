@@ -1,1 +1,63 @@
+.category
+  font-style: normal
+  font-weight: 900
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  &-color
+    &_blue
+      color: $blue
+    &_bluegreen
+      color: #3BBDC4
+    &_greyblue
+      color: #6E99AE
+    &_purle
+      color: #AC8EE3
+    &_orange
+      color: #FFA34D
+    &_green
+      color: #3DC47E
+.title
+  margin: 0
+  padding: 0
+  font-family: "Roboto Slab", serif
+  font-style: normal
+  font-weight: bold
+  font-size: 40px
+  line-height: 50px
+.button
+  position: relative
+  padding: 10px 44px 10px 20px
+  width: 154px
+  height: 40px
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  border-radius: 20px
+  color: #fff
+  background-color: $blue
+  &__arrow
+    position: absolute
+    top: 10px
+    right: 20px
+.text
+  &-main
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
 
+// Global button mouseover settings
+@media (min-width: 991px)
+  .button
+    &:hover
+      transition-duration: 0.3s
+      background-color: $blue-hover
+
+// Global media settings
+@media (max-width: 992px)
+  .title
+    font-size: 30px
+    line-height: 40px

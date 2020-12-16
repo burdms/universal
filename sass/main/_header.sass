@@ -4,19 +4,16 @@
     background-color: #fff
   &-container
     display: flex
+    justify-content: space-between
     align-items: center
-
     padding: 15px 0
   &-logo
-    &__container
-      width: 163px
+    width: 163px
   &-navbar
     display: flex
     align-items: center
     justify-content: space-between
     margin: 0 auto
-    padding: 0
-    list-style-type: none
     color: #ffffff
     &_light
       background-color: $text-color-light
@@ -159,6 +156,7 @@
     overflow-y: auto
     &-container
       min-height: 360px
+
 @media (min-width: 1201px)
   .burger
     &-button

@@ -6,6 +6,11 @@
     <title>Universal — онлайн издание</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -13,8 +18,8 @@
     <header class="header">
       <div class="container">
         <div class="header-container">
-          <a href="/universal" class="header-logo__container">
-            <img src="img/logo-long-dark.svg" alt="Logo" class="header__logo" />
+          <a href="/universal" class="header-logo">
+            <img src="img/logo-long-dark.svg" alt="Логотип" class="header__logo" />
           </a>
           <!-- /.header-logo__container -->
 
@@ -44,7 +49,7 @@
             <span class="burger-button__line"></span>
           </button>
         </div>
-        <!-- /.header-co#5c7d99 -->
+        <!-- /.header-container -->
       </div>
       <!-- /.container -->
     </header>
@@ -76,12 +81,200 @@
     <!-- /.menu -->
 
     <section class="hero">
+      <div class="hero-background"></div>
+      <!-- /.hero-gackground -->
       <div class="container">
         <div class="hero-container">
-          <div class="hero-content"></div>
-          <!-- /.hero-content -->
+          <div id="tab-1" class="hero-content hero-content_1 hero-content_active">
+            <div class="hero-author">
+              <img
+                src="img/hero-author-avatar.png"
+                alt="Фотография автора"
+                class="hero-author__avatar"
+              />
 
-          <div class="hero-tabs"></div>
+              <div class="hero-author__text">
+                <span class="hero-author__name">Давид Гуров</span>
+                <span class="hero-author__description">Разработчик</span>
+              </div>
+              <!-- /.hero-author__text -->
+            </div>
+            <!-- /.hero-author -->
+
+            <div class="hero-heading">
+              <span class="category hero-heading__category category-color_blue">Javascript</span>
+              <h1 class="title hero-heading__title">Расширение Chrome защищает от атак</h1>
+              <button class="button hero-heading__button">
+                Читать далее
+                <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+              </button>
+            </div>
+            <!-- /.hero-heading -->
+          </div>
+          <!-- /.hero-content 1 -->
+
+          <div id="tab-2" class="hero-content hero-content_2">
+            <div class="hero-author">
+              <img
+                src="img/hero-author-avatar.png"
+                alt="Фотография автора"
+                class="hero-author__avatar"
+              />
+
+              <div class="hero-author__text">
+                <span class="hero-author__name">Давид Гуров</span>
+                <span class="hero-author__description">Разработчик</span>
+              </div>
+              <!-- /.hero-author__text -->
+            </div>
+            <!-- /.hero-author -->
+
+            <div class="hero-heading">
+              <span class="category hero-heading__category category-color_greyblue"
+                >Javascript</span
+              >
+              <h1 class="title hero-heading__title">
+                На каком стандарте писать скрипты, если я фрилансер
+              </h1>
+              <button class="button hero-heading__button">
+                Читать далее
+                <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+              </button>
+            </div>
+            <!-- /.hero-heading -->
+          </div>
+          <!-- /.hero-content 2 -->
+
+          <div id="tab-3" class="hero-content hero-content_3">
+            <div class="hero-author">
+              <img
+                src="img/hero-author-avatar.png"
+                alt="Фотография автора"
+                class="hero-author__avatar"
+              />
+
+              <div class="hero-author__text">
+                <span class="hero-author__name">Давид Гуров</span>
+                <span class="hero-author__description">Разработчик</span>
+              </div>
+              <!-- /.hero-author__text -->
+            </div>
+            <!-- /.hero-author -->
+
+            <div class="hero-heading">
+              <span class="category hero-heading__category category-color_purle">html</span>
+              <h1 class="title hero-heading__title">
+                Правильно вставляем картинку на сайт для Retina дисплея
+              </h1>
+              <button class="button hero-heading__button">
+                Читать далее
+                <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+              </button>
+            </div>
+            <!-- /.hero-heading -->
+          </div>
+          <!-- /.hero-content 3 -->
+
+          <div id="tab-4" class="hero-content hero-content_4">
+            <div class="hero-author">
+              <img
+                src="img/hero-author-avatar.png"
+                alt="Фотография автора"
+                class="hero-author__avatar"
+              />
+
+              <div class="hero-author__text">
+                <span class="hero-author__name">Давид Гуров</span>
+                <span class="hero-author__description">Разработчик</span>
+              </div>
+              <!-- /.hero-author__text -->
+            </div>
+            <!-- /.hero-author -->
+
+            <div class="hero-heading">
+              <span class="category hero-heading__category category-color_orange">Web design</span>
+              <h1 class="title hero-heading__title">ТОП-10 плагинов для Figma</h1>
+              <button class="button hero-heading__button">
+                Читать далее
+                <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+              </button>
+            </div>
+            <!-- /.hero-heading -->
+          </div>
+          <!-- /.hero-content 4 -->
+
+          <div id="tab-5" class="hero-content hero-content_5">
+            <div class="hero-author">
+              <img
+                src="img/hero-author-avatar.png"
+                alt="Фотография автора"
+                class="hero-author__avatar"
+              />
+
+              <div class="hero-author__text">
+                <span class="hero-author__name">Давид Гуров</span>
+                <span class="hero-author__description">Разработчик</span>
+              </div>
+              <!-- /.hero-author__text -->
+            </div>
+            <!-- /.hero-author -->
+
+            <div class="hero-heading">
+              <span class="category hero-heading__category category-color_green">CSS</span>
+              <h1 class="title hero-heading__title">
+                Возможности CSS Grid Layout , которые уже можно применять
+              </h1>
+              <button class="button hero-heading__button">
+                Читать далее
+                <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+              </button>
+            </div>
+            <!-- /.hero-heading -->
+          </div>
+          <!-- /.hero-content 5 -->
+
+          <div class="hero-tabs">
+            <h2 class="hero-tabs__title">Рекомендуем</h2>
+            <ul class="hero-tabs__list">
+              <li data-target="#tab-1" class="hero-tab hero-tab_active">
+                <span class="category hero-tab__category category-color_bluegreen">CSS</span>
+                <p class="text-main hero-tab__title">
+                  Как использовать CSS float после того, как вышел Flexbox
+                </p>
+              </li>
+              <!-- /. tab-1 -->
+
+              <li data-target="#tab-2" class="hero-tab">
+                <span class="category hero-tab__category category-color_greyblue">javascript</span>
+                <p class="text-main hero-tab__title">
+                  На каком стандарте писать скрипты, если я фрилансер
+                </p>
+              </li>
+              <!-- /. tab-2 -->
+
+              <li data-target="#tab-3" class="hero-tab">
+                <span class="category hero-tab__category category-color_purle">html</span>
+                <p class="text-main hero-tab__title">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </p>
+              </li>
+              <!-- /. tab-3 -->
+
+              <li data-target="#tab-4" class="hero-tab">
+                <span class="category hero-tab__category category-color_orange">Web design</span>
+                <p class="text-main hero-tab__title">ТОП-10 плагинов для Figma</p>
+              </li>
+              <!-- /. tab-4 -->
+
+              <li data-target="#tab-5" class="hero-tab">
+                <span class="category hero-tab__category category-color_green">CSS</span>
+                <p class="text-main hero-tab__title">
+                  Возможности CSS Grid Layout , которые уже можно применять
+                </p>
+              </li>
+              <!-- /. tab-5 -->
+            </ul>
+          </div>
           <!-- /.hero-tabs -->
         </div>
         <!-- /.hero-container -->

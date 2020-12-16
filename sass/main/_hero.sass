@@ -1,1 +1,135 @@
+.hero
+  position: relative
+  padding-top: 26px
+  &-background
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -98
+    width: 100%
+    height: 471px
+    background-color: $background-dark
+  &-container
+    display: flex
+    border-radius: 10px
+    overflow: hidden
+  &-content
+    display: none
+    width: 877px
+    padding: 56px 54px 100px
+    &_1
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/hero-background.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+    &_2
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/hero-background1.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+    &_3
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/hero-background2.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+    &_4
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/hero-background3.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+    &_5
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/hero-background4.jpg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+    &_active
+      display: block
+  &-author
+    display: flex
+    align-items: center
+    margin-bottom: 145px
+    &__avatar
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      object-fit: cover
+    &__text
+      display: flex
+      flex-direction: column
+    &__name
+      margin-bottom: 2px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #fff
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &-heading
+    margin-left: 1px
+    &__category
+      display: block
+      margin-bottom: 20px
+      text-transform: uppercase
+    &__title
+      height: 100px
+      overflow: hidden
+      margin-bottom: 50px
+      max-width: 598px
+      color: #fff
+  &-tabs
+    max-width: 263px
+    background-color: #fff
+    &__title
+      margin: 20px 25px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+  &-tab
+    padding: 17px 25px 19px
+    cursor: pointer
+    &:not(:last-child)
+      border-bottom: 1px solid $light-grey
+    &:nth-child(1)
+      border-top: 1px solid $light-grey
+    &:last-child
+      padding-top: 18px
+    &_active
+      background-color: $tab-active
+    &__category
+      display: block
+      margin-bottom: 8px
+    &__title
+      margin: 0
+      height: 40px
+      overflow: hidden
+      // display: -webkit-box
+      // -webkit-line-clamp: 3
+      // -webkit-box-orient: vertical
+      // overflow: hidden
 
+@media (max-width: 992px)
+  .hero
+    &-container
+      position: relative
+    &-content
+      width: 100%
+      height: 571px
+      padding: 56px 30px
+    &-heading
+      &__title
+        max-width: 360px
+        height: 120px
+    &-tabs
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(255, 255, 255, 0.8)
