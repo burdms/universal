@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -84,7 +85,7 @@
       <div class="hero-background"></div>
       <!-- /.hero-gackground -->
       <div class="container">
-        <div class="hero-container">
+        <div class="hero-container hero-container_desktop">
           <div id="tab-1" class="hero-content hero-content_1 hero-content_active">
             <div class="hero-author">
               <img
@@ -104,10 +105,10 @@
             <div class="hero-heading">
               <span class="category hero-heading__category category-color_blue">Javascript</span>
               <h1 class="title hero-heading__title">Расширение Chrome защищает от атак</h1>
-              <button class="button hero-heading__button">
+              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
-              </button>
+              </a>
             </div>
             <!-- /.hero-heading -->
           </div>
@@ -136,10 +137,10 @@
               <h1 class="title hero-heading__title">
                 На каком стандарте писать скрипты, если я фрилансер
               </h1>
-              <button class="button hero-heading__button">
+              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
-              </button>
+              </a>
             </div>
             <!-- /.hero-heading -->
           </div>
@@ -166,10 +167,10 @@
               <h1 class="title hero-heading__title">
                 Правильно вставляем картинку на сайт для Retina дисплея
               </h1>
-              <button class="button hero-heading__button">
+              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
-              </button>
+              </a>
             </div>
             <!-- /.hero-heading -->
           </div>
@@ -194,10 +195,10 @@
             <div class="hero-heading">
               <span class="category hero-heading__category category-color_orange">Web design</span>
               <h1 class="title hero-heading__title">ТОП-10 плагинов для Figma</h1>
-              <button class="button hero-heading__button">
+              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
-              </button>
+              </a>
             </div>
             <!-- /.hero-heading -->
           </div>
@@ -224,10 +225,10 @@
               <h1 class="title hero-heading__title">
                 Возможности CSS Grid Layout , которые уже можно применять
               </h1>
-              <button class="button hero-heading__button">
+              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
-              </button>
+              </a>
             </div>
             <!-- /.hero-heading -->
           </div>
@@ -278,12 +279,191 @@
           <!-- /.hero-tabs -->
         </div>
         <!-- /.hero-container -->
+
+        <!-- Mobile contaier -->
+        <div class="swiper-container hero-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hero-content_mobile hero-content_1">
+              <div class="hero-author hero-author_mobile">
+                <img
+                  src="img/hero-author-avatar.png"
+                  alt="Фотография автора"
+                  class="hero-author__avatar hero-author__avatar_mobile"
+                />
+
+                <div class="hero-author__text hero-author__text_mobile">
+                  <span class="hero-author__name">Давид Гуров</span>
+                  <span class="hero-author__description">Разработчик</span>
+                </div>
+                <!-- /.hero-author__text -->
+              </div>
+              <!-- /.hero-author -->
+
+              <div class="hero-heading hero-heading_mobile">
+                <span class="category hero-heading__category category-color_blue">Javascript</span>
+                <h1 class="title hero-heading__title">Расширение Chrome защищает от атак</h1>
+                <a
+                  href="/universal/article.html"
+                  target="_blank"
+                  class="button hero-heading__button hero-heading__button_centered"
+                >
+                  Читать далее
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </a>
+              </div>
+              <!-- /.hero-heading -->
+            </div>
+            <!-- /. hero-content_1 -->
+
+            <div class="swiper-slide hero-content_mobile hero-content_2">
+              <div class="hero-author hero-author_mobile">
+                <img
+                  src="img/hero-author-avatar.png"
+                  alt="Фотография автора"
+                  class="hero-author__avatar hero-author__avatar_mobile"
+                />
+
+                <div class="hero-author__text hero-author__text_mobile">
+                  <span class="hero-author__name">Давид Гуров</span>
+                  <span class="hero-author__description">Разработчик</span>
+                </div>
+                <!-- /.hero-author__text -->
+              </div>
+              <!-- /.hero-author -->
+
+              <div class="hero-heading hero-heading_mobile">
+                <span class="category hero-heading__category category-color_greyblue"
+                  >Javascript</span
+                >
+                <h1 class="title hero-heading__title">
+                  На каком стандарте писать скрипты, если я фрилансер
+                </h1>
+                <a
+                  href="/universal/article.html"
+                  target="_blank"
+                  class="button hero-heading__button hero-heading__button_centered"
+                >
+                  Читать далее
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </a>
+              </div>
+              <!-- /.hero-heading -->
+            </div>
+            <!-- /. hero-content_2 -->
+
+            <div class="swiper-slide hero-content_mobile hero-content_3">
+              <div class="hero-author hero-author_mobile">
+                <img
+                  src="img/hero-author-avatar.png"
+                  alt="Фотография автора"
+                  class="hero-author__avatar hero-author__avatar_mobile"
+                />
+
+                <div class="hero-author__text hero-author__text_mobile">
+                  <span class="hero-author__name">Давид Гуров</span>
+                  <span class="hero-author__description">Разработчик</span>
+                </div>
+                <!-- /.hero-author__text -->
+              </div>
+              <!-- /.hero-author -->
+
+              <div class="hero-heading hero-heading_mobile">
+                <span class="category hero-heading__category category-color_purle">html</span>
+                <h1 class="title hero-heading__title">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </h1>
+                <a
+                  href="/universal/article.html"
+                  target="_blank"
+                  class="button hero-heading__button hero-heading__button_centered"
+                >
+                  Читать далее
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </a>
+              </div>
+              <!-- /.hero-heading -->
+            </div>
+            <!-- /. hero-content_3 -->
+
+            <div class="swiper-slide hero-content_mobile hero-content_4">
+              <div class="hero-author hero-author_mobile">
+                <img
+                  src="img/hero-author-avatar.png"
+                  alt="Фотография автора"
+                  class="hero-author__avatar hero-author__avatar_mobile"
+                />
+
+                <div class="hero-author__text hero-author__text_mobile">
+                  <span class="hero-author__name">Давид Гуров</span>
+                  <span class="hero-author__description">Разработчик</span>
+                </div>
+                <!-- /.hero-author__text -->
+              </div>
+              <!-- /.hero-author -->
+
+              <div class="hero-heading hero-heading_mobile">
+                <span class="category hero-heading__category category-color_orange"
+                  >web design</span
+                >
+                <h1 class="title hero-heading__title">ТОП-10 плагинов для Figma</h1>
+                <a
+                  href="/universal/article.html"
+                  target="_blank"
+                  class="button hero-heading__button hero-heading__button_centered"
+                >
+                  Читать далее
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </a>
+              </div>
+              <!-- /.hero-heading -->
+            </div>
+            <!-- /. hero-content_4 -->
+
+            <div class="swiper-slide hero-content_mobile hero-content_5">
+              <div class="hero-author hero-author_mobile">
+                <img
+                  src="img/hero-author-avatar.png"
+                  alt="Фотография автора"
+                  class="hero-author__avatar hero-author__avatar_mobile"
+                />
+
+                <div class="hero-author__text hero-author__text_mobile">
+                  <span class="hero-author__name">Давид Гуров</span>
+                  <span class="hero-author__description">Разработчик</span>
+                </div>
+                <!-- /.hero-author__text -->
+              </div>
+              <!-- /.hero-author -->
+
+              <div class="hero-heading hero-heading_mobile">
+                <span class="category hero-heading__category category-color_green">css</span>
+                <h1 class="title hero-heading__title">
+                  Возможности CSS Grid Layout , которые уже можно применять
+                </h1>
+                <a
+                  href="/universal/article.html"
+                  target="_blank"
+                  class="button hero-heading__button hero-heading__button_centered"
+                >
+                  Читать далее
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </a>
+              </div>
+              <!-- /.hero-heading -->
+            </div>
+            <!-- /. hero-content_5 -->
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hero -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

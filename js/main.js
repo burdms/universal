@@ -17,4 +17,18 @@ $(document).ready(function () {
     $(activeContent).addClass("hero-content_active");
     $(this).addClass("hero-tab_active");
   });
+
+  var heroSwiper = new Swiper(".swiper-container", {
+    loop: true,
+    effect: "fade",
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 3000,
+    },
+  });
 });
