@@ -73,6 +73,17 @@
   border-radius: 3px
   color: #fff
   background-color: #3DC47E
+.social
+  &-icon
+    cursor: pointer
+    width: 40px
+    height: 40px
+    &_facebook
+      fill: #4267B2
+    &_twitter
+      fill: #1DA1F2
+    &_youtube
+      fill: #FF0000
 
 // Slider pagination styles
 .swiper-pagination
@@ -88,6 +99,17 @@
     &:hover
       transition-duration: 0.3s
       background-color: $blue-hover
+  .social
+    &-icon
+      &_facebook
+        &:hover
+          fill: #486fbe
+      &_twitter
+        &:hover
+          fill: #33b1ff
+      &_youtube
+        &:hover
+          fill: #ff2626
 
 // Global media settings
 @media (max-width: 992px)
