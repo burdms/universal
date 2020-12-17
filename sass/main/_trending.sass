@@ -12,6 +12,7 @@
     overflow: hidden
     background-color: #fff
     color: inherit
+    transition: 0.3s
     &_1
       position: relative
       justify-content: space-between
@@ -262,6 +263,11 @@
 // Hover settings
 @media (min-width: 991px)
   .trending
+    &-card
+      &_linked
+        &:hover
+          transition: 0.3s
+          transform: scale(1.01)
     &__download-button
       &:hover
         color: #C1F4F5
