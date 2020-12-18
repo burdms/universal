@@ -34,9 +34,16 @@ $(document).ready(function () {
   });
 
   // Bookmark icons in latest news section
+
   // var bookmarkMain = document.querySelector(".bookmark-icon");
   // bookmarkMain.addEventListener("click", function () {
   //   document.querySelector(".bookmark-icon").classList.toggle("bookmark-icon_active");
+  // });
+
+  // var bookmarkMain = $('[data-toggle="check"]');
+  // bookmarkMain.on("click", function () {
+  //   var targetBookmark = $(this).attr("id");
+  //   $(bookmarkMain).find(".bookmark-icon").toggleClass("bookmark-icon_active");
   // });
 
   // Жесткий неадаптивный ужасный кривой невыносимый костыль. Не шарю в js, никак не могу (хоть и понимаю) связать через this. Но я сделаю : ))

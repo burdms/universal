@@ -110,7 +110,7 @@
         overflow-x: hidden !important
         text-overflow: ellipsis
       &_download
-        height: 70px
+        height: 50px
         margin-bottom: 10px
         color: #fff
       &_9
@@ -226,16 +226,26 @@
         display: flex
         align-items: center
   &__download-button
-    margin: 0 auto
-    padding: 0 0 0 30px
-    height: 30px
-    width: 83px
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    bottom: 0
+    left: 0
+    right: 0
+    padding-left: 42px
+    padding-bottom: 12px
+    height: 45px
+    width: 100%
     font-style: normal
     font-weight: 900
     font-size: 14px
     line-height: 20px
     background-color: transparent
     color: #fff
+.button
+  &__download
+    margin-right: 10px
 .info
   &_2
     margin-right: 7px
