@@ -12,3 +12,10 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-heavyitalic.woff") format("woff"),
+    url("../fonts/lato-heavyitalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}

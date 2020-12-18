@@ -18,6 +18,7 @@ $(document).ready(function () {
     $(this).addClass("hero-tab_active");
   });
 
+  // Hero tab slider on the main page (mobile)
   var heroSwiper = new Swiper(".swiper-container", {
     loop: true,
     effect: "fade",
@@ -31,4 +32,30 @@ $(document).ready(function () {
       delay: 3000,
     },
   });
+
+  // Bookmark icons in latest news section
+  // var bookmarkMain = document.querySelector(".bookmark-icon");
+  // bookmarkMain.addEventListener("click", function () {
+  //   document.querySelector(".bookmark-icon").classList.toggle("bookmark-icon_active");
+  // });
+
+  // Жесткий неадаптивный ужасный кривой невыносимый костыль. Не шарю в js, никак не могу (хоть и понимаю) связать через this. Но я сделаю : ))
+  document.getElementById("1").onclick = function () {
+    document.getElementById("1").classList.toggle("bookmark-icon_active");
+  };
+  document.getElementById("2").onclick = function () {
+    document.getElementById("2").classList.toggle("bookmark-icon_active");
+  };
+  document.getElementById("3").onclick = function () {
+    document.getElementById("3").classList.toggle("bookmark-icon_active");
+  };
+  document.getElementById("4").onclick = function () {
+    document.getElementById("4").classList.toggle("bookmark-icon_active");
+  };
+  document.getElementById("5").onclick = function () {
+    document.getElementById("5").classList.toggle("bookmark-icon_active");
+  };
+  document.getElementById("6").onclick = function () {
+    document.getElementById("6").classList.toggle("bookmark-icon_active");
+  };
 });
