@@ -167,3 +167,56 @@
         &:hover
           transition: 0.3s
           background-color: $tab-hover
+
+@media (max-width: 1200px)
+  .latest
+    &-articles
+      max-width: 677px
+  .articles
+    &-item
+      &__image
+        width: 195px
+@media (max-width: 992px)
+  .latest
+    &-articles
+      max-width: 480px
+    &-aside
+      width: 200px
+  .articles
+    &-item
+      &__image
+        display: none
+  .aside
+    &-item
+      &__image
+        display: none
+
+@media (max-width: 767px)
+  .latest
+    &-wrapper
+      flex-direction: column
+    &-articles
+      margin-bottom: 20px
+      max-width: none
+    &-aside
+      width: 100%
+  .aside
+    &-item
+      &__image
+        display: block
+
+@media (min-width: 577px) and (max-width: 767px)
+  .latest
+    &-aside
+  .aside
+    &-list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding: 0 30px
+    &-li
+      flex-basis: 45%
+      &:not(:first-child)
+        border-top: none
+      &:nth-child(n+3)
+        border-top: 1px solid $light-grey
