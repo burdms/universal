@@ -72,4 +72,13 @@ $(document).ready(function () {
   readMoreButton.addEventListener("click", function () {
     $(asideMainHidden).removeClass("aside-li_hidden");
   });
+
+  $(".footer-subscribe__form").validate({
+    messages: {
+      email: {
+        required: "Пример: name@domain.com",
+        email: "Пример: name@domain.com",
+      },
+    },
+  });
 });

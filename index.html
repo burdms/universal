@@ -1297,9 +1297,35 @@
     </section>
     <!-- /.hot -->
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-subscribe">
+          <h2 class="title footer-subscribe__title">Подпишитесь на нашу рассылку</h2>
+          <form action="send.php" method="POST" class="subscribe footer-subscribe__form">
+            <div class="subscribe__input-group">
+              <input
+                type="email"
+                class="subscribe__input"
+                placeholder="Email"
+                name="email"
+                required
+              />
+            </div>
+            <!-- /.subscribe__input-group -->
+            <input type="hidden" name="formName" value="subscribe" />
+            <button class="button subscribe__button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.footer-subscribe -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
