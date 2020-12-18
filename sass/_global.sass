@@ -48,7 +48,14 @@
     position: absolute
     top: 10px
     right: 20px
-
+  &__images
+    margin-right: 8px
+  &__counter
+    margin-left: 8px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
 .text
   &-main
     font-style: normal
@@ -86,8 +93,10 @@
       fill: #FF0000
 
 // Slider pagination styles
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 8.5px
 .swiper-pagination
-  margin-bottom: 40px
+  margin-bottom: 32px
   &-bullet
     background-color: #D9DADB
     &-active
