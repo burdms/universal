@@ -118,8 +118,10 @@
   &-li
     position: relative
     padding: 17px 0
-    &:not(:last-child)
-      border-bottom: 1px solid $light-grey
+    &:not(:first-child)
+      border-top: 1px solid $light-grey
+    &_hidden
+      display: none
     &__number
       position: absolute
       top: 14px

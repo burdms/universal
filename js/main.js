@@ -58,4 +58,11 @@ $(document).ready(function () {
   document.getElementById("6").onclick = function () {
     document.getElementById("6").classList.toggle("bookmark-icon_active");
   };
+
+  // Read more aside lates articles button
+  var readMoreButton = document.querySelector(".latest-aside__more-button");
+  var asideMainHidden = document.querySelector(".aside-li_hidden");
+  readMoreButton.addEventListener("click", function () {
+    $(asideMainHidden).removeClass("aside-li_hidden");
+  });
 });
