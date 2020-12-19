@@ -1,3 +1,4 @@
+// Footer subscribtion part
 .footer
   &-subscribe
     padding: 60px 0 70px
@@ -32,6 +33,167 @@
     padding: 10px 25px
     width: 136px
 
+// Footer menu part 
+.footer
+  &-menu
+    padding-bottom: 64px
+    display: flex
+    align-items: flex-start
+    &__group
+      padding-top: 30px
+      display: flex
+      flex-direction: column
+      width: 195px
+      &_news
+        border-top: 5px solid #FF4F52
+      &_articles
+        border-top: 5px solid #AC8EE3
+      &_video
+        border-top: 5px solid #4592FF
+      &_courses
+        border-top: 5px solid #FFA34D
+      &_information
+        border-top: 5px solid #3DC47E
+      &_categories
+        width: 165px
+        border-top: 5px solid #6E99AE
+    &__title
+      margin: 0 0 25px
+      width: 165px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      white-space: nowrap
+      overflow-x: hidden !important
+      text-overflow: ellipsis
+    &__li
+      width: 165px
+      white-space: nowrap
+      overflow: hidden !important
+      text-overflow: ellipsis
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      &:not(:last-child)
+        margin-bottom: 15px
+    &__link
+      color: inherit
+      transition: 0.3s
+
+// Footer contacts part 
+.footer
+  &-contacts
+    padding: 30px 0 25px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid $light-grey
+    border-bottom: 1px solid $light-grey
+    &__logo
+      width: 50px
+      height: 50px
+      object-fit: cover
+    &__group
+      margin: 0 auto 0 0
+      display: flex
+      align-items: center
+    &__li
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &:not(:last-child)
+        margin-right: 30px
+    &__link
+      color: inherit
+    &__socials
+      display: flex
+      align-items: center
+  &-logo
+    margin-right: 28px
+.social
+  &-icon
+    &__footer
+      margin-left: 15px
+
+// Footer bootom info part
+.footer
+  &-info
+    padding: 40px 0 55px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-light
+    &__description
+      max-width: 750px
+// Footer menu links mouseover settings
+@media (min-width: 993px)
+  .footer-menu__link, .footer-contacts__link
+    &:hover
+      color: $blue
+
+@media (max-width: 1200px)
+  .footer
+    &-menu
+      &__group
+        width: 160px
+      &__title
+        width: 160px
+      &__li
+        width: 160px
+
+@media (max-width: 992px)
+  .footer
+    &-menu
+      flex-wrap: wrap
+      padding-bottom: 34px
+      &__group
+        flex-basis: 33%
+        align-items: center
+        margin-bottom: 30px
+        &:nth-child(2n+3)
+          flex-basis: 34%
+      &__title
+        text-align: center
+      &__li
+        text-align: center
+    &-contacts
+      flex-wrap: wrap
+      &__group
+        margin: 0 auto 0 50px
+      &__socials
+        flex-basis: 100%
+        justify-content: center
+    &-info
+      flex-direction: column
+      align-items: center
+      &__text
+        text-align: center
+      &__copywrite
+        order: -1
+        margin-bottom: 15px
+
+@media (max-width: 767px)
+  .footer
+    &-contacts
+      flex-direction: column
+      align-items: center
+      &__group
+        flex-basis: 100%
+        margin: 0 0 30px
+    &-logo
+      margin-right: 0
+      margin-bottom: 30px
 @media (max-width: 576px)
   .footer
     &-subscribe
@@ -42,6 +204,22 @@
       &-group
         margin-right: 0
         margin-bottom: 25px
+  .footer
+    &-menu
+      &__group
+        flex-basis: 50%
+        &:nth-child(2n+3)
+          flex-basis: 50%
+  .footer
+    &-contacts
+      &__group
+        flex-direction: column
+        align-items: center
+      &__li
+        margin-bottom: 15px
+        &:not(:last-child)
+          margin-right: 0
+
 @media (max-width: 380px)
   .footer
     &-subscribe
@@ -52,3 +230,9 @@
       &-group
         width: 100%
         max-width: none
+  .footer
+    &-menu
+      &__group
+        flex-basis: 100%
+        &:nth-child(2n+3)
+          flex-basis: 100%
