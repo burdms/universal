@@ -1,0 +1,138 @@
+.a-hero
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(38, 45, 51, 0.75)
+    z-index: 0
+  &-container
+    position: relative
+    padding: 63px 97px 72px
+  &-menu
+    position: absolute
+    top: 62px
+    right: 97px
+    display: flex
+    align-items: center
+    &__link
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #ffffff
+    &__icon
+      margin-right: 5px
+      &_last
+        margin-right: 0
+        margin-left: 5px
+    &__home
+      margin-right: 30px
+    &__left
+      margin-right: 20px
+  &__category
+    display: block
+    margin-bottom: 52px
+    color: $blue
+  &__title
+    margin-bottom: 33px
+    max-width: 750px
+    font-size: 55px
+    line-height: 70px
+    color: #FFFFFF
+  &__text
+    margin-bottom: 43px
+    max-width: 632px
+    color: #FFFFFF
+    opacity: 0.85
+  &-details
+    display: flex
+    align-items: center
+    &__item
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+      opacity: 0.85
+      &:not(:last-child)
+        margin-right: 20px
+    &__icon
+      margin-right: 5px
+.a-bookmark
+  &-icon
+    position: absolute
+    top: 151.5px
+    left: 4.5px
+    z-index: 50
+    width: 21px
+    height: 27px
+    fill: #ffffff
+    opacity: 0.4
+    cursor: pointer
+    &_active
+      fill: #FF4F52
+      opacity: 1
+
+@media (min-width: 993px)
+  .a-hero
+    &-menu
+      &__link
+        &:hover
+          color: $blue
+  .a-bookmark
+    &-icon
+      &:hover
+        fill: #ffa3a3
+        opacity: 0.7
+
+@media (max-width: 992px)
+  .a-hero
+    &__title
+      font-size: 36px
+      line-height: 45px
+@media (max-width: 767px)
+  .a-hero
+    &-container
+      padding: 70px 60px 60px
+    &-menu
+      &__text
+        display: none
+      &__home, &__left
+        margin-right: 5px
+    &__title
+      margin-bottom: 20px
+      width: 100%
+      max-width: none
+      font-size: 26px
+      line-height: 32px
+@media (max-width: 576px)
+  .a-hero
+    &-container
+      padding: 60px 0
+    &-menu
+      top: 20px
+      right: 0
+    &__category
+      text-align: center
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+    &-details
+      justify-content: center
+  .a-bookmark
+    &-icon
+      top: 20px
+      left: 0
+      width: 14px
+      height: 21px

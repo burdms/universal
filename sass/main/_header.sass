@@ -7,6 +7,8 @@
     justify-content: space-between
     align-items: center
     padding: 15px 0
+    &_light
+      padding-bottom: 10px
   &-logo
     width: 163px
   &-navbar
@@ -16,7 +18,7 @@
     margin: 0 auto
     color: #ffffff
     &_light
-      background-color: $text-color-light
+      color: $text-color-light
     &__item
       font-style: normal
       font-weight: 900
@@ -44,6 +46,7 @@
       background-color: #656B70
       border: none
       &_light
+        color: $text-color
         background-color: #F5F5F5
       &::placeholder
         font-family: "Lato-Regular", sans-serif
@@ -76,6 +79,8 @@
       width: 20px
       height: 1px
       background-color: #fff
+      &_light
+        background-color: $background-dark
 
 // Mobile menu modal settings
 .menu
@@ -139,7 +144,7 @@
     text-align: center
     color: #ffffff
     &_light
-      background-color: $text-color-light
+      color: $text-color-light
     &__item
       font-style: normal
       font-weight: 700
