@@ -1454,24 +1454,38 @@
               <a href="#" class="footer-contacts__link">Реклама</a>
             </li>
             <li class="footer-contacts__li">
-              <a href="#" class="footer-contacts__link">Обратная связь</a>
+              <a
+                href="#"
+                data-toggle="modal"
+                data-href="#contacts-modal"
+                class="footer-contacts__link"
+                >Обратная связь</a
+              >
             </li>
           </ul>
           <!-- /.footer-contacts__group -->
 
-          <div class="footer-contacts__socials">
-            <svg class="social-icon social-icon__footer social-icon_facebook">
-              <use xlink:href="img/sprite.svg#socials-facebook"></use>
-            </svg>
-            <svg class="social-icon social-icon__footer social-icon_twitter">
-              <use xlink:href="img/sprite.svg#socials-twitter"></use>
-            </svg>
-            <svg class="social-icon social-icon__footer social-icon_youtube">
-              <use xlink:href="img/sprite.svg#socials-youtube"></use>
-            </svg>
-            <svg class="social-icon social-icon__footer social-icon_instagram">
-              <use xlink:href="img/sprite.svg#socials-instagram"></use>
-            </svg>
+          <div class="footer-contacts__socials social-links">
+            <a href="https://www.facebook.com/" target="_blank" class="social-links__item">
+              <svg class="social-icon social-icon__footer social-icon_facebook">
+                <use xlink:href="img/sprite.svg#socials-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="social-links__item">
+              <svg class="social-icon social-icon__footer social-icon_twitter">
+                <use xlink:href="img/sprite.svg#socials-twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="social-links__item">
+              <svg class="social-icon social-icon__footer social-icon_youtube">
+                <use xlink:href="img/sprite.svg#socials-youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-links__item">
+              <svg class="social-icon social-icon__footer social-icon_instagram">
+                <use xlink:href="img/sprite.svg#socials-instagram"></use>
+              </svg>
+            </a>
           </div>
           <!-- /.footer-contacts__socials -->
         </div>
@@ -1491,13 +1505,11 @@
     </footer>
     <!-- /.footer -->
 
-    <div class="modal">
+    <div class="modal" id="contacts-modal">
       <div class="modal__overlay"></div>
-      modal__overlay_visible
       <!-- /.modal__overlay -->
 
       <div class="modal__dialog">
-        modal__dialog_visible
         <a href="#" class="modal__close">
           <svg class="close-icon">
             <use xlink:href="img/sprite.svg#X"></use>
@@ -1509,26 +1521,46 @@
         <form action="send.php" method="POST" class="modal__form">
           <input type="hidden" name="formName" value="modalContacts" />
 
-          <label for="theme-selection" class="modal__label">Тема</label>
-          <select name="theme" id="theme-selection" class="modal__select" required>
-            <option disabled selected>Выберите тему</option>
-            <option value="news">Новости</option>
-            <option value="articles">Статьи</option>
-            <option value="video">Видеоуроки</option>
-            <option value="courses">Курсы</option>
-            <option value="information">Информация</option>
-            <option value="categories">Категории</option>
-          </select>
+          <!-- <div class="modal__input-group">
+            <label for="theme-selection" class="modal__label">Тема</label>
+            <select name="theme" id="theme-selection" class="modal__select" required>
+              <option disabled selected>Выберите тему</option>
+              <option value="news">Новости</option>
+              <option value="articles">Статьи</option>
+              <option value="video">Видеоуроки</option>
+              <option value="courses">Курсы</option>
+              <option value="information">Информация</option>
+              <option value="categories">Категории</option>
+            </select>
+          </div> -->
+          <!-- /.modal__input-group -->
+
+          <div class="modal__input-group custom-select">
+            <label for="theme-selection" class="modal__label">Тема</label>
+            <select name="theme" id="theme-selection" class="modal__select" required>
+              <option disabled selected>Выберите тему</option>
+              <option value="news">Новости</option>
+              <option value="articles">Статьи</option>
+              <option value="video">Видеоуроки</option>
+              <option value="courses">Курсы</option>
+              <option value="information">Информация</option>
+              <option value="categories">Категории</option>
+            </select>
+          </div>
+          <!-- /.modal__input-group -->
 
           <label for="textarea" class="modal__label">Сообщение</label>
           <textarea id="textarea" class="modal__textarea" name="message"></textarea>
 
-          <label for="email" class="modal__label">Email</label>
-          <input id="email" type="email" class="modal__input" name="email" required />
+          <div class="modal__input-group">
+            <label for="email" class="modal__label">Email</label>
+            <input id="email" type="email" class="modal__input" name="email" required />
+          </div>
+          <!-- /.modal__input-group -->
 
-          <div class="checkbox-group modal__checkbox-group">
-            <input type="checkbox" name="privacy" class="checkbox-group__box" required />
-            <span class="checkbox-group__text">Согласен с обработкой данных</span>
+          <div class="modal__checkbox-group">
+            <input id="checkbox-id" type="checkbox" name="privacy" class="css-checkbox" required />
+            <label for="checkbox-id" class="css-label">Согласен с обработкой данных</label>
           </div>
           <!-- /.checkbox-group -->
 

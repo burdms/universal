@@ -4,9 +4,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 $formName = $_POST['formName'];
-$name = $_POST['name'];
+$theme = $_POST['theme'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
 $message = $_POST['message'];
 
 if($formName == "subscribe") {
@@ -15,26 +14,15 @@ if($formName == "subscribe") {
     <h2>Новая подписка</h2>
     <b>E-mail:</b> $email
     ";
-}elseif ($formName == "modalBooking") {
-    $title = "New booking request Best Tour Plan";
+}elseif ($formName == "modalContacts") {
+    $title = "Новый запрос 'Обратная связь' Universal";
     $body = "
-    <h2>New booking request</h2>
-    <b>Name:</b> $name<br>
-    <b>Phone:</b> $phone<br>
+    <h2>Новый запрос</h2>
+    <b>Тема:</b> $theme<br>
     <b>E-mail:</b> $email<br><br>
-    <b>Message:</b><br>$message
+    <b>Сообщение:</b><br>$message
     ";
 }
-else{
-    $title = "New request Best Tour Plan";
-    $body = "
-    <h2>New request</h2>
-    <b>Name:</b> $name<br>
-    <b>Phone:</b> $phone<br><br>
-    <b>Message:</b><br>$message
-    ";
-}
-
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {

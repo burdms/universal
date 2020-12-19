@@ -187,3 +187,33 @@
         max-width: 300px
         &_main
           max-width: 213px
+@media (max-width: 576px)
+  .hot
+    &-wrapper
+      grid-template-rows: repeat(7, 170px)
+      grid-gap: 20px
+    &-item
+      &_3
+        grid-column: 1 / 5
+        grid-row: 6
+      &_4
+        grid-column: 1 / 5
+        grid-row: 7
+      &__description
+        max-width: none
+        width: 100%
+        &_main
+          max-width: 213px
+@media (max-width: 500px)
+  .hot
+    &-item
+      &_2
+        background-image: url(../img/hot-item_2.1.png)
+        background-repeat: no-repeat
+        background-position: right -20px center
+        background-size: 260px 260px
+@media (max-width: 380px)
+  .hot
+    &-item
+      &_2
+        background-image: none
