@@ -12,7 +12,7 @@
     max-width: 622px
     margin-bottom: 30px
 
-// body with aside
+// body aside
 .a-body
   &_asided
     display: flex
@@ -33,8 +33,9 @@
       margin-bottom: 15px
       display: flex
       flex-direction: column
+      color: inherit
     &__image
-      margin-bottom: 11px
+      margin-bottom: 15px
       width: 100%
       height: 180px
       border-radius: 10px
@@ -72,15 +73,112 @@
       color: $text-color-light
       &:not(:last-child)
         margin-right: 10px
+
+// body quote
+.a-body
+  &__quote
+    position: relative
+    margin-top: 80px
+    margin-bottom: 45px
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $background-dark
+    &::before
+      content: ""
+      position: absolute
+      z-index: -1
+      top: -20px
+      left: -20px
+      width: 70px
+      height: 70px
+      background-image: url(../img/articles/quote.svg)
+      background-repeat: no-repeat
+
+// Body tags
+.a-body
+  &-tags
+    margin-bottom: 30px
+    display: flex
+    flex-wrap: wrap
+    padding: 15px 0
+  &__tag
+    margin-right: 9px
+
+// Share buttons
+.a-body
+  &-share
+    position: relative
+    padding: 30px 0 0
+    &__hr
+      position: absolute
+      top: 0
+      left: 0
+      margin: 0
+      padding: 0
+      width: 105%
+      height: 1px
+      border: none
+      color: $light-grey
+      background-color: $light-grey
+    &__title
+      margin-bottom: 25px
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $background-dark
+    &__group
+      display: flex
+      align-items: center
+    &__item
+      min-width: 131px
+      &:not(:last-child)
+        margin-right: 14px
+    &__link
+      padding: 10px 20px
+      display: flex
+      align-items: center
+      width: 100%
+    &__icon
+      margin-right: 8px
+    &__counter
+      margin-left: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #FFC4C9
+
+// Hover settings
+@media (min-width: 993px)
+  .a-body
+    &-aside
+      &__group
+        &:hover
+          transition: 0.3s
+          transform: scale(1.01)
+
 @media (max-width: 1200px)
   .a-body
     &__text
       max-width: 538px
+    &__quote
+      margin-top: 60px
 @media (max-width: 992px)
   .a-body
+    &__title
+      font-size: 22px
+      line-height: 26px
     &__text
       max-width: none
       width: 100%
+    &__quote
+      margin-top: 40px
+      margin-bottom: 30px
+      font-size: 22px
+      line-height: 26px
   .a-body
     &_asided
       flex-wrap: wrap
@@ -110,8 +208,29 @@
         overflow: hidden
 @media (max-width: 576px)
   .a-body
+    &__title
+      font-size: 18px
+      line-height: 22px
+    &__quote
+      font-size: 18px
+      line-height: 22px
+      &::before
+        top: -10px
+        left: -10px
+        width: 50px
+        height: 50px
+        background-size: contain
     &-container
       padding: 0 0 30px
+    &-share
+      &__hr
+        width: 100%
+      &__item
+        min-width: 85px
+      &__text
+        display: none
+      &__counter
+        margin-left: 0
     &-aside
       margin-left: 0
 @media (max-width: 425px)
@@ -125,3 +244,9 @@
         height: auto
       &__text
         height: auto
+@media (max-width: 320px)
+  .a-body
+    &-share
+      &__item
+        &:not(:last-child)
+          margin-right: auto
