@@ -7,6 +7,7 @@ $formName = $_POST['formName'];
 $theme = $_POST['theme'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$comment = $_POST['comment'];
 
 if($formName == "subscribe") {
     $title = "Новая подписка Universal";
@@ -21,6 +22,12 @@ if($formName == "subscribe") {
     <b>Тема:</b> $theme<br>
     <b>E-mail:</b> $email<br><br>
     <b>Сообщение:</b><br>$message
+    ";
+}elseif ($formName == "newComment") {
+    $title = "Новый комментарий Universal";
+    $body = "
+    <h2>Новый комментарий</h2><br><br>
+    <b>Сообщение:</b><br>$comment
     ";
 }
 

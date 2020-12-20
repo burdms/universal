@@ -917,7 +917,7 @@
             />загрузить еще
           </button>
 
-          <div class="a-comments-new">
+          <div id="new-comment" class="a-comments-new">
             <h3 class="a-title a-comments-new__title">Что вы думаете на этот счет?</h3>
             <div class="a-comments-new__body">
               <img
@@ -926,12 +926,16 @@
                 class="a-comments-new__avatar"
               />
               <form action="send.php" method="POST" class="a-comments-new__form">
-                <textarea
-                  name="comment"
-                  class="a-comments-new__message"
-                  required
-                  minlength="100"
-                ></textarea>
+                <input type="hidden" name="formName" value="newComment" />
+                <div class="a-comments-new__message-group">
+                  <textarea
+                    name="comment"
+                    class="a-comments-new__message"
+                    required
+                    minlength="100"
+                  ></textarea>
+                </div>
+                <!-- /.a-comments-new__message-group -->
                 <button class="button a-comments-new__button" type="submit">
                   Отправить
                   <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />

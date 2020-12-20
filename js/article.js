@@ -32,4 +32,14 @@ $(document).ready(function () {
   loadMoreButton.addEventListener("click", function () {
     $(commentHidden).removeClass("a-comments-group_hidden");
   });
+
+  // Comment validation
+  $(".a-comments-new__form").validate({
+    messages: {
+      comment: {
+        required: "Это поле обязательно",
+        minlength: "Ваш комментарий должен содержать мин. 100 символов",
+      },
+    },
+  });
 });
