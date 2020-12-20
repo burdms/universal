@@ -105,7 +105,7 @@
             <div class="hero-heading">
               <span class="category hero-heading__category category-color_blue">Javascript</span>
               <h1 class="title hero-heading__title">Расширение Chrome защищает от атак</h1>
-              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
+              <a href="/universal/article.html" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
               </a>
@@ -137,7 +137,7 @@
               <h1 class="title hero-heading__title">
                 На каком стандарте писать скрипты, если я фрилансер
               </h1>
-              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
+              <a href="/universal/article.html" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
               </a>
@@ -167,7 +167,7 @@
               <h1 class="title hero-heading__title">
                 Правильно вставляем картинку на сайт для Retina дисплея
               </h1>
-              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
+              <a href="/universal/article.html" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
               </a>
@@ -195,7 +195,7 @@
             <div class="hero-heading">
               <span class="category hero-heading__category category-color_orange">Web design</span>
               <h1 class="title hero-heading__title">ТОП-10 плагинов для Figma</h1>
-              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
+              <a href="/universal/article.html" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
               </a>
@@ -225,7 +225,7 @@
               <h1 class="title hero-heading__title">
                 Возможности CSS Grid Layout , которые уже можно применять
               </h1>
-              <a href="/universal/article.html" target="_blank" class="button hero-heading__button">
+              <a href="/universal/article.html" class="button hero-heading__button">
                 Читать далее
                 <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
               </a>
@@ -305,7 +305,6 @@
                 <h1 class="title hero-heading__title">Расширение Chrome защищает от атак</h1>
                 <a
                   href="/universal/article.html"
-                  target="_blank"
                   class="button hero-heading__button hero-heading__button_centered"
                 >
                   Читать далее
@@ -341,7 +340,6 @@
                 </h1>
                 <a
                   href="/universal/article.html"
-                  target="_blank"
                   class="button hero-heading__button hero-heading__button_centered"
                 >
                   Читать далее
@@ -375,7 +373,6 @@
                 </h1>
                 <a
                   href="/universal/article.html"
-                  target="_blank"
                   class="button hero-heading__button hero-heading__button_centered"
                 >
                   Читать далее
@@ -409,7 +406,6 @@
                 <h1 class="title hero-heading__title">ТОП-10 плагинов для Figma</h1>
                 <a
                   href="/universal/article.html"
-                  target="_blank"
                   class="button hero-heading__button hero-heading__button_centered"
                 >
                   Читать далее
@@ -443,7 +439,6 @@
                 </h1>
                 <a
                   href="/universal/article.html"
-                  target="_blank"
                   class="button hero-heading__button hero-heading__button_centered"
                 >
                   Читать далее
@@ -695,15 +690,25 @@
           <div class="trending-card trending-card_10">
             <h2 class="title trending-card__title_10">Наши соцсети</h2>
             <div class="trending-card__socials">
-              <svg class="social-icon social-icon_trending social-icon_facebook">
-                <use xlink:href="img/sprite.svg#socials-facebook"></use>
-              </svg>
-              <svg class="social-icon social-icon_trending social-icon_twitter">
-                <use xlink:href="img/sprite.svg#socials-twitter"></use>
-              </svg>
-              <svg class="social-icon social-icon_trending social-icon_youtube">
-                <use xlink:href="img/sprite.svg#socials-youtube"></use>
-              </svg>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="trending-card__social-link"
+              >
+                <svg class="social-icon social-icon_trending social-icon_facebook">
+                  <use xlink:href="img/sprite.svg#socials-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.twitter.com/" target="_blank" class="trending-card__social-link">
+                <svg class="social-icon social-icon_trending social-icon_twitter">
+                  <use xlink:href="img/sprite.svg#socials-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/" target="_blank" class="trending-card__social-link">
+                <svg class="social-icon social-icon_trending social-icon_youtube">
+                  <use xlink:href="img/sprite.svg#socials-youtube"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.trending-card__socials -->
           </div>
@@ -743,7 +748,7 @@
           <div class="latest-articles">
             <ul class="articles-list">
               <li class="articles-li">
-                <svg data-toggle="check" id="1" class="bookmark-icon">
+                <svg data-toggle="check" id="bookmark-1" class="bookmark-icon">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -779,7 +784,7 @@
               <!-- /. articles-li-1 -->
 
               <li class="articles-li">
-                <svg data-toggle="check" id="2" class="bookmark-icon bookmark-icon_active">
+                <svg data-toggle="check" id="bookmark-2" class="bookmark-icon bookmark-icon_active">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -815,7 +820,7 @@
               <!-- /. articles-li-2 -->
 
               <li class="articles-li">
-                <svg data-toggle="check" id="3" class="bookmark-icon">
+                <svg data-toggle="check" id="bookmark-3" class="bookmark-icon">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -850,7 +855,7 @@
               <!-- /. articles-li-3 -->
 
               <li class="articles-li">
-                <svg id="4" class="bookmark-icon">
+                <svg id="bookmark-4" class="bookmark-icon">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -886,7 +891,7 @@
               <!-- /. articles-li-4 -->
 
               <li class="articles-li">
-                <svg id="5" class="bookmark-icon">
+                <svg id="bookmark-5" class="bookmark-icon">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -920,7 +925,7 @@
               <!-- /. articles-li-5 -->
 
               <li class="articles-li">
-                <svg id="6" class="bookmark-icon">
+                <svg id="bookmark-6" class="bookmark-icon">
                   <use xlink:href="img/sprite.svg#Bookmark"></use>
                 </svg>
                 <a href="/universal/article.html" class="articles-item">
@@ -1537,7 +1542,7 @@
 
           <div class="modal__input-group custom-select">
             <label for="theme-selection" class="modal__label">Тема</label>
-            <select name="theme" id="theme-selection" class="modal__select" required>
+            <select name="theme" id="theme-selection" class="modal__select" required size="6">
               <option disabled selected>Выберите тему</option>
               <option value="news">Новости</option>
               <option value="articles">Статьи</option>

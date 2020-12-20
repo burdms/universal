@@ -47,23 +47,23 @@ $(document).ready(function () {
   // });
 
   // Жесткий неадаптивный ужасный кривой невыносимый костыль. Не шарю в js, никак не могу (хоть и понимаю) связать через this. Но я сделаю : ))
-  document.getElementById("1").onclick = function () {
-    document.getElementById("1").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-1").onclick = function () {
+    document.getElementById("bookmark-1").classList.toggle("bookmark-icon_active");
   };
-  document.getElementById("2").onclick = function () {
-    document.getElementById("2").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-2").onclick = function () {
+    document.getElementById("bookmark-2").classList.toggle("bookmark-icon_active");
   };
-  document.getElementById("3").onclick = function () {
-    document.getElementById("3").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-3").onclick = function () {
+    document.getElementById("bookmark-3").classList.toggle("bookmark-icon_active");
   };
-  document.getElementById("4").onclick = function () {
-    document.getElementById("4").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-4").onclick = function () {
+    document.getElementById("bookmark-4").classList.toggle("bookmark-icon_active");
   };
-  document.getElementById("5").onclick = function () {
-    document.getElementById("5").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-5").onclick = function () {
+    document.getElementById("bookmark-5").classList.toggle("bookmark-icon_active");
   };
-  document.getElementById("6").onclick = function () {
-    document.getElementById("6").classList.toggle("bookmark-icon_active");
+  document.getElementById("bookmark-6").onclick = function () {
+    document.getElementById("bookmark-6").classList.toggle("bookmark-icon_active");
   };
 
   // Read more aside lates articles button
