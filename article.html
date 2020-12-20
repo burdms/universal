@@ -916,6 +916,30 @@
               class="a-comments-button__icon a-comments-button__icon a-comments-button__icon_centerisntcool"
             />загрузить еще
           </button>
+
+          <div class="a-comments-new">
+            <h3 class="a-title a-comments-new__title">Что вы думаете на этот счет?</h3>
+            <div class="a-comments-new__body">
+              <img
+                src="img/articles/a-comment-avatar_5.png"
+                alt="Фотография автора комментария"
+                class="a-comments-new__avatar"
+              />
+              <form action="send.php" method="POST" class="a-comments-new__form">
+                <textarea
+                  name="comment"
+                  class="a-comments-new__message"
+                  required
+                  minlength="100"
+                ></textarea>
+                <button class="button a-comments-new__button" type="submit">
+                  Отправить
+                  <img src="img/button-arrow.svg" alt="Иконка: стрелочка" class="button__arrow" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- /.a-comments-new -->
         </div>
         <!-- /.a-comments-container -->
       </div>
