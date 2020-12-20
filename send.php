@@ -29,6 +29,14 @@ if($formName == "subscribe") {
     <h2>Новый комментарий</h2><br><br>
     <b>Сообщение:</b><br>$comment
     ";
+}elseif ($formName == "modalPartnership") {
+    $title = "Новый запрос по партнерству Universal";
+    $body = "
+    <h2>Новый запрос</h2>
+    <b>Тема:</b> $theme<br>
+    <b>E-mail:</b> $email<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
 }
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
