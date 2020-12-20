@@ -68,7 +68,7 @@ $(document).ready(function () {
 
   // Read more aside lates articles button
   var readMoreButton = document.querySelector(".latest-aside__more-button");
-  var asideMainHidden = document.querySelector(".aside-li_hidden");
+  var asideMainHidden = document.querySelectorAll(".aside-li_hidden");
   readMoreButton.addEventListener("click", function () {
     $(asideMainHidden).removeClass("aside-li_hidden");
   });

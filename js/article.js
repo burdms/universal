@@ -25,4 +25,11 @@ $(document).ready(function () {
       onlyInViewport: true,
     },
   });
+
+  // Load more comments button
+  var loadMoreButton = document.querySelector(".a-comments-button__more");
+  var commentHidden = document.querySelectorAll(".a-comments-group_hidden");
+  loadMoreButton.addEventListener("click", function () {
+    $(commentHidden).removeClass("a-comments-group_hidden");
+  });
 });

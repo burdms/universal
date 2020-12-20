@@ -1,0 +1,188 @@
+.a-comments
+  &-container
+    padding: 90px 98px 30px 97px
+    max-width: 945px
+  &__heading
+    margin-bottom: 26px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    &_counter
+      margin-left: 10px
+      font-family: "Lato", sans-serif
+      font-style: normal
+      font-weight: normal
+      color: $text-color-light
+  &-button
+    padding: 10px 20px
+    border: 1px solid $light-grey
+    color: $background-dark
+    background-color: transparent
+    transition: 0.3s
+    &__new
+      margin-top: -3px
+      width: 228px
+      white-space: nowrap
+      overflow-x: hidden !important
+      text-overflow: ellipsis
+    &__more
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 50px
+      border-radius: 25px
+      white-space: nowrap
+      overflow-x: hidden !important
+      text-overflow: ellipsis
+    &__icon
+      margin-right: 10px
+      &_centerisntcool
+        margin-left: 28px
+        margin-right: 8px
+  &-group
+    padding: 20px 0 28px
+    display: flex
+    border-top: 1px solid $light-grey
+    &_reply
+      padding-left: 90px
+    &_hidden
+      display: none
+    &__avatar
+      margin-right: 15px
+      flex-shrink: 0
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      object-fit: cover
+    &__body
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+    &__name
+      margin-bottom: 12px
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+    &__timetag
+      margin-left: 8px
+      margin-bottom: 12px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__text
+      margin-bottom: 14px
+      flex-basis: 100%
+      max-width: 570px
+      &_bugged
+        margin-bottom: 44px
+    &__details
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &-details
+    &__reply
+      margin-right: 15px
+      display: flex
+      align-items: center
+      color: inherit
+    &__icon
+      margin-right: 5px
+    &__rating
+      display: flex
+      align-items: center
+    &__counter
+      font-weight: 900
+      color: $text-color-light
+      &_liked
+        color: #3DC47E
+      &_disliked
+        color: #FF4F52
+.a-thumb-icon
+  cursor: pointer
+  width: 15px
+  height: 15px
+  fill: #BCBFC2
+  &_like
+    margin-right: 10px
+  &_dislike
+    margin-left: 10px
+
+// Hover settings
+@media (min-width: 993px)
+  .a-comments
+    &-button
+      &:hover
+        transition: 0.3s
+        background-color: $light-grey
+    &-details
+      &__reply
+        &:hover
+          color: $text-color-light
+  .a-thumb-icon
+    &_like
+      &:hover
+        fill: #3DC47E
+    &_dislike
+      &:hover
+        fill: #FF4F52
+
+@media (max-width: 992px)
+  .a-comments
+    &__title
+      font-size: 22px
+      line-height: 26px
+    &-group
+      &__text
+        font-size: 16px
+        line-height: 22px
+@media (max-width: 767px)
+  .a-comments
+    &-container
+      padding-left: 60px
+      padding-right: 60px
+    &-button
+      &__new
+        width: auto
+        min-width: 60px
+      &__text
+        display: none
+      &__icon
+        &_pensil
+          margin-right: 0
+    &-group
+      &_reply
+        padding-left: 45px
+      &__avatar
+        height: 45px
+        width: 45px
+@media (max-width: 576px)
+  .a-comments
+    &-container
+      padding-left: 0
+      padding-right: 0
+    &-group
+      &__name
+        margin-bottom: 8px
+        font-size: 14px
+        line-height: 20px
+      &__text
+        font-size: 14px
+        line-height: 20px
+      &__timetag
+        margin-left: 6px
+        margin-bottom: 8px
+        font-size: 10px
+        line-height: 12px
+      &_reply
+        padding-left: 40px
