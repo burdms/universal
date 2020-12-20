@@ -10,4 +10,19 @@ $(document).ready(function () {
   document.getElementById("a1").onclick = function () {
     document.getElementById("a1").classList.toggle("a-bookmark-icon_active");
   };
+
+  var swiperSlider = new Swiper(".article-slider", {
+    loop: true,
+    effect: "fade",
+
+    navigation: {
+      nextEl: ".article-slider__button_next",
+      prevEl: ".article-slider__button_prev",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
 });

@@ -1,0 +1,127 @@
+.a-body
+  &-container
+    padding: 0 98px 30px 97px
+  &__title
+    margin-bottom: 28px
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $background-dark
+  &__text
+    max-width: 622px
+    margin-bottom: 30px
+
+// body with aside
+.a-body
+  &_asided
+    display: flex
+    align-items: flex-start
+  &-aside
+    margin-top: 134px
+    margin-left: -38px
+    max-width: 263px
+    &__heading
+      margin-bottom: 20px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $background-dark
+      letter-spacing: normal
+    &__group
+      margin-bottom: 15px
+      display: flex
+      flex-direction: column
+    &__image
+      margin-bottom: 11px
+      width: 100%
+      height: 180px
+      border-radius: 10px
+      overflow: hidden
+      object-fit: cover
+    &__title
+      margin-bottom: 5px
+      width: 100%
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $background-dark
+      letter-spacing: normal
+    &__text
+      margin: 0 0 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__details
+      display: flex
+      align-items: center
+    &__icon
+      margin-right: 5px
+.aside
+  &-details
+    &__item
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-color-light
+      &:not(:last-child)
+        margin-right: 10px
+@media (max-width: 1200px)
+  .a-body
+    &__text
+      max-width: 538px
+@media (max-width: 992px)
+  .a-body
+    &__text
+      max-width: none
+      width: 100%
+  .a-body
+    &_asided
+      flex-wrap: wrap
+    &-aside
+      margin-top: 0px
+      margin-left: 97px
+      max-width: 100%
+      &__group
+        flex-direction: row
+      &__image
+        width: 263px
+        flex-shrink: 0
+        margin-right: 15px
+@media (max-width: 767px)
+  .a-body
+    &-container
+      padding: 0 60px 30px
+    &-aside
+      margin-left: 60px
+      &__image
+        width: 163px
+      &__title
+        height: 50px
+        overflow: hidden
+      &__text
+        height: 80px
+        overflow: hidden
+@media (max-width: 576px)
+  .a-body
+    &-container
+      padding: 0 0 30px
+    &-aside
+      margin-left: 0
+@media (max-width: 425px)
+  .a-body
+    &-aside
+      &__group
+        flex-direction: column
+      &__image
+        width: 100%
+      &__title
+        height: auto
+      &__text
+        height: auto

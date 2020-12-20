@@ -1,0 +1,116 @@
+.article
+  &-slider
+    margin-bottom: 45px
+    width: 100%
+    min-height: 625px
+    border-radius: 10px
+    overflow: hidden
+    &__item
+      position: relative
+      width: 100%
+      height: 100%
+    &__image
+      height: 555px
+      width: 100%
+      object-fit: cover
+    &__info
+      margin-top: -4px
+      padding: 0 35px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-height: 70px
+      border-radius: 0 0 10px 10px
+      border: 1px solid $light-grey
+      border-top: none
+    &__description
+      max-width: 807px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__author
+      margin-left: 25px
+      padding: 12px 0 13px 30px
+      display: flex
+      align-items: center
+      flex-basis: 227px
+      flex-shrink: 0
+      border-left: 1px solid $light-grey
+    &__button
+      position: absolute
+      top: 248px
+      z-index: 99
+      width: 60px
+      height: 60px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 60px
+      background-color: transparent
+      opacity: 0.4
+      &_next
+        right: 35px
+        background-image: url(../img/articles/article-slider__button_next.svg)
+      &_prev
+        left: 35px
+        background-image: url(../img/articles/article-slider__button_prev.svg)
+.slider
+  &-author
+    &__image
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      object-fit: cover
+    &__info
+      display: flex
+      flex-wrap: wrap
+    &__name
+      flex-basis: 100%
+      margin-bottom: 2px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__description
+      flex-basis: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-color-light
+
+@media (max-width: 767px)
+  .article
+    &-slider
+      min-height: 450px
+      &__image
+        height: 300px
+      &__info
+        padding-top: 16px
+        padding-bottom: 15px
+        flex-direction: column
+        align-items: flex-start
+      &__description
+        margin-bottom: 15px
+      &__author
+        margin: 0
+        padding: 0
+        border: none
+        flex-basis: auto
+      &__button
+        top: 148px
+        width: 30px
+        height: 30px
+        background-size: 30px
+@media (max-width: 380px)
+  .article
+    &-slider
+      &__info
+        padding-left: 20px
+        padding-right: 20px
+      &__button
+        &_next
+          right: 20px
+        &_prev
+          left: 20px
