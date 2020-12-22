@@ -29,8 +29,11 @@ $(document).ready(function () {
   // Load more comments button
   var loadMoreButton = document.querySelector(".a-comments-button__more");
   var commentHidden = document.querySelectorAll(".a-comments-group_hidden");
+  var addNewComment = document.querySelector(".a-comments-new");
   loadMoreButton.addEventListener("click", function () {
     $(commentHidden).removeClass("a-comments-group_hidden");
+    $(loadMoreButton).addClass("a-comments-button__more_loaded");
+    $(addNewComment).addClass("a-comments-new_no-btn");
   });
 
   // Modal open/close
