@@ -44,6 +44,11 @@ $(document).ready(function () {
 
   // Bookmark icons in latest news section
 
+  // Антон, если ты это читаешь, значит духи д#@$%а ополчились на меня и я так и не смог решить поставленную задачу.
+  // Осмелюсь предположить, что я мыслил в верном направлении, но т.к. у меня тут каша из нативного и jQuery
+  // (не удивлюсь, если динозавры писали так и за них на это сбросили метеорит), прийти к рабочему результату я так и не смог.
+  // По этой причине хотел бы тебя помучить касательно этого, чтоб хоть смысл понять. А то стыдно.
+
   // var bookmarkMain = document.querySelector(".bookmark-icon");
   // bookmarkMain.addEventListener("click", function () {
   //   document.querySelector(".bookmark-icon").classList.toggle("bookmark-icon_active");
@@ -55,7 +60,7 @@ $(document).ready(function () {
   //   $(bookmarkMain).find(".bookmark-icon").toggleClass("bookmark-icon_active");
   // });
 
-  // Жесткий неадаптивный ужасный кривой невыносимый костыль. Не шарю в js, никак не могу (хоть и понимаю) связать через this. Но я сделаю : ))
+  // Жесткий неадаптивный ужасный кривой невыносимый костыль. Не шарю в js, никак не могу (хоть и понимаю) связать через this.
   document.getElementById("bookmark-1").onclick = function () {
     document.getElementById("bookmark-1").classList.toggle("bookmark-icon_active");
   };
