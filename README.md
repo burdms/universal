@@ -1,3 +1,6 @@
-# universal
+# Universal
 
-Бурдин Дмитрий. Выпускной проект Web Start — Glo Academy
+Burdin Dmitrii.
+Glo Academy. Web-start 11.
+Primary (insane) final project.
+http://dmitrii-burdin.ru/projects/universal
