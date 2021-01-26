@@ -48,14 +48,14 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'dmitrii4webstart@gmail.com'; // Логин на почте
-    $mail->Password   = 'simplepass'; // Пароль на почте
+    $mail->Username   = 'mail@gmail.com'; // Логин на почте
+    $mail->Password   = 'pass'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('dmitrii4webstart@gmail.com', 'Dmitrii Burdin'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('mail@gmail.com', 'Dmitrii Burdin'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('burdms@yandex.ru');  
+    $mail->addAddress('mail@yandex.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);
